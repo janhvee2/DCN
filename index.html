@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic Light System 🚦</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding-top: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #traffic-status p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        #traffic-status span {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Smart Traffic Light System 🚦</h1>
+
+    <div id="traffic-status">
+        <p>North: <span id="north-light">red</span></p>
+        <p>South: <span id="south-light">red</span></p>
+        <p>East: <span id="east-light">green</span></p>
+        <p>West: <span id="west-light">red</span></p>
+    </div>
+
+    <button onclick="fetchTraffic()">Update Traffic Lights</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
